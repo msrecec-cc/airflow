@@ -951,3 +951,5 @@ class KeycloakAuthManager(BaseAuthManager[KeycloakAuthManagerUser]):
         payload_bytes = urlsafe_b64decode(payload_b64)
         payload = json.loads(payload_bytes)
         return payload["exp"] < int(time.time())
+
+# No functional change: marks this file as changed for a fork CI comparison.

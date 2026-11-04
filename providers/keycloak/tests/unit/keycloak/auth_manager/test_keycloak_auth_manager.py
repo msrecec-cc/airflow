@@ -1632,3 +1632,5 @@ class TestKeycloakAuthManager:
 
     def test_get_fastapi_middleware(self, auth_manager):
         assert auth_manager.get_fastapi_middlewares() == [(KeycloakJWTMiddleware, {})]
+
+# No functional change: marks this file as changed for a fork CI comparison.
